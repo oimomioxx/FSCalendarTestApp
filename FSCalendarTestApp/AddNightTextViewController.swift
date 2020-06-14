@@ -48,7 +48,6 @@ class AddNightTextViewController : UIViewController, UITextFieldDelegate {
             self.goodText3.text = savedNightTextData.goodTextData3
             self.improvementText.text = savedNightTextData.improvementTextData
             
-            
         }
     }
     
