@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D1C4C900B34D48E3E0FE646 /* Pods_FSCalendarTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83D81D7FE648238B4CB45BD /* Pods_FSCalendarTestApp.framework */; };
 		9523619E24698A8B008BA669 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523619D24698A8B008BA669 /* UIImageExtension.swift */; };
 		952361A024698DC6008BA669 /* PiechartResultDataRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523619F24698DC6008BA669 /* PiechartResultDataRealm.swift */; };
 		95424473246D8BFE00185CF7 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95424472246D8BFE00185CF7 /* DataExtension.swift */; };
@@ -23,10 +22,12 @@
 		957FC4002464445900763898 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FC3FF2464445900763898 /* UIViewExtension.swift */; };
 		95F80A462478036400829133 /* MorningTextDataRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F80A452478036400829133 /* MorningTextDataRealm.swift */; };
 		95F80A482478043100829133 /* NightTextDataRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F80A472478043100829133 /* NightTextDataRealm.swift */; };
+		A9F0BE584131EFEF58CF92DD /* Pods_FSCalendarTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9FA02871CCED5CE37C8098 /* Pods_FSCalendarTestApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		244188A0355E70A36527AF1C /* Pods-FSCalendarTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendarTestApp.debug.xcconfig"; path = "Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		387BCE44CBC4B85F29704ABA /* Pods-FSCalendarTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendarTestApp.release.xcconfig"; path = "Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		4C0B5E47312145012906BBC3 /* Pods-FSCalendarTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendarTestApp.debug.xcconfig"; path = "Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9523619D24698A8B008BA669 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		9523619F24698DC6008BA669 /* PiechartResultDataRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiechartResultDataRealm.swift; sourceTree = "<group>"; };
 		95424472246D8BFE00185CF7 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
@@ -44,8 +45,7 @@
 		957FC3FF2464445900763898 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		95F80A452478036400829133 /* MorningTextDataRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningTextDataRealm.swift; sourceTree = "<group>"; };
 		95F80A472478043100829133 /* NightTextDataRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightTextDataRealm.swift; sourceTree = "<group>"; };
-		E83D81D7FE648238B4CB45BD /* Pods_FSCalendarTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCalendarTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE5AF9F5C4A80F58249F1F42 /* Pods-FSCalendarTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendarTestApp.release.xcconfig"; path = "Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		CD9FA02871CCED5CE37C8098 /* Pods_FSCalendarTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCalendarTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +53,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D1C4C900B34D48E3E0FE646 /* Pods_FSCalendarTestApp.framework in Frameworks */,
+				A9F0BE584131EFEF58CF92DD /* Pods_FSCalendarTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0615D4BA28468EF4E6143523 /* Frameworks */ = {
+		23CD0569DE11088C4C3C430F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E83D81D7FE648238B4CB45BD /* Pods_FSCalendarTestApp.framework */,
+				CD9FA02871CCED5CE37C8098 /* Pods_FSCalendarTestApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -71,8 +71,8 @@
 		8E872F1E9D4354935E679DBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				244188A0355E70A36527AF1C /* Pods-FSCalendarTestApp.debug.xcconfig */,
-				EE5AF9F5C4A80F58249F1F42 /* Pods-FSCalendarTestApp.release.xcconfig */,
+				4C0B5E47312145012906BBC3 /* Pods-FSCalendarTestApp.debug.xcconfig */,
+				387BCE44CBC4B85F29704ABA /* Pods-FSCalendarTestApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -83,7 +83,7 @@
 				9570782B245E89670084D6A6 /* FSCalendarTestApp */,
 				9570782A245E89670084D6A6 /* Products */,
 				8E872F1E9D4354935E679DBD /* Pods */,
-				0615D4BA28468EF4E6143523 /* Frameworks */,
+				23CD0569DE11088C4C3C430F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,11 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9570783D245E896A0084D6A6 /* Build configuration list for PBXNativeTarget "FSCalendarTestApp" */;
 			buildPhases = (
-				0A3B462939E11A45ACFDAD8A /* [CP] Check Pods Manifest.lock */,
+				8A9F37889E9F13940E5C64E3 /* [CP] Check Pods Manifest.lock */,
 				95707825245E89670084D6A6 /* Sources */,
 				95707826245E89670084D6A6 /* Frameworks */,
 				95707827245E89670084D6A6 /* Resources */,
-				051D78BBD5F3E5E553F7A720 /* [CP] Embed Pods Frameworks */,
+				A1181D864E7189AB6C0E0FA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,7 +147,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = OIMO;
 				TargetAttributes = {
 					95707828245E89670084D6A6 = {
@@ -187,24 +187,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		051D78BBD5F3E5E553F7A720 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0A3B462939E11A45ACFDAD8A /* [CP] Check Pods Manifest.lock */ = {
+		8A9F37889E9F13940E5C64E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,6 +207,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1181D864E7189AB6C0E0FA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSCalendarTestApp/Pods-FSCalendarTestApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -296,6 +296,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -357,6 +358,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -388,7 +390,7 @@
 		};
 		9570783E245E896A0084D6A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244188A0355E70A36527AF1C /* Pods-FSCalendarTestApp.debug.xcconfig */;
+			baseConfigurationReference = 4C0B5E47312145012906BBC3 /* Pods-FSCalendarTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -411,7 +413,7 @@
 		};
 		9570783F245E896A0084D6A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE5AF9F5C4A80F58249F1F42 /* Pods-FSCalendarTestApp.release.xcconfig */;
+			baseConfigurationReference = 387BCE44CBC4B85F29704ABA /* Pods-FSCalendarTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";

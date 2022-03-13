@@ -70,7 +70,8 @@ typedef BOOL (^RLMShouldCompactOnLaunchBlock)(NSUInteger totalBytes, NSUInteger 
 /// setting one of the two properties will automatically nil out the other.
 @property (nonatomic, copy, nullable) NSURL *fileURL;
 
-/// A string used to identify a particular in-memory Realm. Mutually exclusive with `fileURL` and `syncConfiguration`;
+/// A string used to identify a particular in-memory Realm. Mutually exclusive with `fileURL`,
+/// `seedFilePath`and `syncConfiguration`;
 /// setting any one of the three properties will automatically nil out the other two.
 @property (nonatomic, copy, nullable) NSString *inMemoryIdentifier;
 
@@ -79,13 +80,23 @@ typedef BOOL (^RLMShouldCompactOnLaunchBlock)(NSUInteger totalBytes, NSUInteger 
 
 /// Whether to open the Realm in read-only mode.
 ///
-/// This is required to be able to open Realm files which are not writeable or
-/// are in a directory which is not writeable. This should only be used on files
-/// which will not be modified by anyone while they are open, and not just to
-/// get a read-only view of a file which may be written to by another thread or
-/// process. Opening in read-only mode requires disabling Realm's reader/writer
-/// coordination, so committing a write transaction from another process will
-/// result in crashes.
+/// For non-synchronized Realms, this is required to be able to open Realm
+/// files which are not writeable or are in a directory which is not writeable.
+/// This should only be used on files which will not be modified by anyone
+/// while they are open, and not just to get a read-only view of a file which
+/// may be written to by another thread or process. Opening in read-only mode
+/// requires disabling Realm's reader/writer coordination, so committing a
+/// write transaction from another process will result in crashes.
+///
+/// Syncronized Realms must always be writeable (as otherwise no
+/// synchronization could happen), and this instead merely disallows performing
+/// write transactions on the Realm. In addition, it will skip some automatic
+/// writes made to the Realm, such as to initialize the Realm's schema. Setting
+/// `readOnly = YES` is not strictly required for Realms which the sync user
+/// does not have write access to, but is highly recommended as it will improve
+/// error reporting and catch some errors earlier.
+///
+/// Realms using query-based sync cannot be opened in read-only mode.
 @property (nonatomic) BOOL readOnly;
 
 /// The current schema version.
@@ -143,6 +154,23 @@ typedef BOOL (^RLMShouldCompactOnLaunchBlock)(NSUInteger totalBytes, NSUInteger 
 
  */
 @property (nonatomic) NSUInteger maximumNumberOfActiveVersions;
+
+/**
+ When opening the Realm for the first time, instead of creating an empty file,
+ the Realm file will be copied from the provided seed file path and used instead.
+ This can be used to open a Realm file with pre-populated data.
+
+ If a realm file already exists at the configuration's destination path, the seed file
+ will not be copied and the already existing realm will be opened instead.
+
+ Note that to use this parameter with a synced Realm configuration
+ the seed Realm must be appropriately copied to a destination with
+ `[RLMRealm writeCopyForConfiguration:]` first.
+
+ This option is mutually exclusive with `inMemoryIdentifier`. Setting a `seedFilePath`
+ will nil out the `inMemoryIdentifier`.
+ */
+@property (nonatomic, copy, nullable) NSURL* seedFilePath;
 
 @end
 
